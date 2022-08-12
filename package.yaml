@@ -1,0 +1,38 @@
+name: haskell-primer-slides
+version: 0.1.0.0
+synopsis: A slideshow about Haskell Primer
+description: See README at <https://github.com/ners/reflex-slides#readme>
+github: ners/reflex-slides
+category: Web
+license-file: LICENCE
+
+executable:
+  main: Main.hs
+  source-dirs: app
+  dependencies:
+    - base
+    - base64
+    - bytestring
+    - clay
+    - file-embed
+    - reflex-arc
+    - reflex-dom
+    - reflex-slides
+    - text
+    - web-font-mdi
+
+  ghc-options:
+    - -dynamic
+    - -threaded
+
+default-extensions:
+  - DefaultSignatures
+  - LambdaCase
+  - MultiParamTypeClasses
+  - NamedFieldPuns
+  - OverloadedStrings
+  - RankNTypes
+  - RecordWildCards
+  - ScopedTypeVariables
+  - TupleSections
+  - TypeApplications
